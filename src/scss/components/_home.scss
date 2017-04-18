@@ -1,0 +1,133 @@
+.loading-message-container {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div.loading-message {
+        animation-name: loadingMessage;
+        animation-duration: 0.5s;
+        animation-delay: 0.7s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        animation-direction:alternate;
+        will-change:opacity;
+        opacity: 0;
+        color: white;
+        &.active {
+            animation-play-state: running;
+        }
+    }
+}
+.container.home {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 1;
+    transform: scale(1);
+    will-change:transform, opacity;
+    transition: all 0.7s;
+    .container-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../../assets/img/earth.png");
+        background-position: center;
+        background-size: 600px;
+        background-repeat: no-repeat;
+        transition: background 0.7s;
+
+    }
+
+    .container-content {
+        width: 100%;
+        height: 100%;
+        color:$yellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: 1;
+        text-transform: uppercase;
+
+
+        h1.pre-title {
+            letter-spacing: 20px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            transition: all 0.7s;
+            text-align: center;
+        }
+        h3.title {
+            letter-spacing: 2vw;
+            margin-bottom: 60px;
+            font-size: 3vw;
+            transition: all 0.7s;
+            text-align: center;
+        }
+        a.cta {
+            text-decoration: none;
+            letter-spacing: 10px;
+            display: block;
+            position: relative;
+            transition: all 0.7s;
+            &:after {
+                position: absolute;
+                content:"";
+                bottom: -5px;
+                left: 0px;
+                width: 100%;
+                height: 3px;
+                background: $yellow;
+                transform: scaleX(0);
+                transition:transform;
+                transition-duration: 0.2s;
+                will-change:transform;
+            }
+            &:hover {
+                &:after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+    &.isHover {
+        .container-bg {
+            background-size: 650px;
+        }
+        .container-content {
+            h1.pre-title {
+                letter-spacing: 16px;
+            }
+            h3.title {
+                letter-spacing: 40px;
+            }
+
+        }
+    }
+    &.loading {
+        opacity: 0;
+        transform: scale(0.7);
+
+    }
+}
+
+// loading animation while the geolocation is retrieve
+@keyframes loadingMessage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

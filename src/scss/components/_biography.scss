@@ -1,0 +1,144 @@
+.container {
+    width: 100%;
+    height: 100%;
+.description-pages {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.description-img {
+    position: relative;
+    &.team {
+        margin-top: 150px;
+    }
+}
+.description-img img {
+  width: 80vh;
+  height: auto;
+  filter: grayscale(100%);
+}
+.description-text {
+    position: absolute;
+    left: 30px;
+    bottom:0px;
+    @media screen and (max-width: 870px) {
+        bottom:17vw;
+    }
+    width: 50%;
+    .about-name {
+        color:$yellow;
+        font-size: 30px;
+        letter-spacing: 15px;
+        margin-bottom: 15px;
+    }
+    .description-about{
+        color: white;
+        line-height: 1.5;
+        padding-left: 30px;
+        padding-bottom: 2%;
+    }
+}
+
+.timeline {
+  overflow: scroll;
+  height: 100%;
+  padding-right: 20px;
+}
+
+/******
+
+SLIDER SCROLLBAR
+
+******/
+
+.timeline::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+.timeline::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: $yellow;
+  border: 0px none;
+  border-radius: 2px;
+}
+.timeline::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+.timeline::-webkit-scrollbar-thumb:active {
+  background: $yellow;
+}
+.timeline::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none;
+  border-radius: 5px;
+}
+.timeline::-webkit-scrollbar-track:hover {
+  background: #000000;
+}
+.timeline::-webkit-scrollbar-track:active {
+  background: $yellow;
+}
+.timeline::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/******
+
+Informations timelines
+
+******/
+
+.six-dates {
+  position: absolute;
+  width: 45%;
+  height: 50vh;
+  right: 40px;
+  top: 180px;
+  z-index: 1;
+  text-align: right;
+  color: $yellow;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+.six-dates h3 {
+  letter-spacing: 10px;
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+
+.six-dates h2 {
+  opacity: 0.6;
+  letter-spacing: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+
+.six-dates h4 {
+  font-size: 14px;
+  color:#FFF;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+.six-dates p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  padding-left: 20%;
+}
+
+&.biography {
+    p {
+        font-size: 14px;
+    }
+}
+}

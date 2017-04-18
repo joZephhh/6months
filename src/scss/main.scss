@@ -1,0 +1,17 @@
+
+//librairies
+@import "librairies/_reset.scss";
+@import "librairies/font-awesome/font-awesome.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700i');
+
+//tools
+@import "tools/_vars.scss";
+@import "tools/_mixins.scss";
+@import "tools/_base.scss";
+
+//pages
+@import "components/_home.scss";
+@import "components/_experience.scss";
+@import "components/_mission.scss";
+@import "components/_biography.scss";
+@import "components/_404.scss";
