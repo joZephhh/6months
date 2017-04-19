@@ -1,5 +1,5 @@
-// const url = "http://localhost:8888/";
-const url = "https://6months.space/";
+const url = "http://localhost:8888/";
+// const url = "https://6months.space/";
 
 let sixMonths = {};
       // DOM ELEMENTS

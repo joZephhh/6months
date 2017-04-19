@@ -223,7 +223,7 @@
   text-decoration: none;
   display: inline-block;
   i {
-      color: #F5FF00;
+      color: $yellow;
       font-size:30px;
   }
 }
@@ -308,7 +308,7 @@ section .content .description {
 }
 
 .name, .date, .image-tweet h6 {
-  color: #F5FF00;
+  color: $yellow;
   font-family: "Montserrat";
   text-decoration: none;
   span {

@@ -19,5 +19,5 @@
   }
 
   // Define your adress to serve correctly files
-  // define("URL", "http://localhost:8888/");
-  define("URL", "https://6months.space/");
+  define("URL", "http://localhost:8888/");
+  // define("URL", "https://6months.space/");
