@@ -73,7 +73,7 @@ cd 6months/builder
 
  - HTML5/SASS (to CSS3)
  - JavaScript
-    - WebGL, earth librairy : http://www.webglearth.com/
+    - WebGL, earth library : http://www.webglearth.com/
     - Moment.js : https://momentjs.com/
  - Gulp.js v4.0
  - PHP
